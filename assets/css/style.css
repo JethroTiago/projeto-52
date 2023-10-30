@@ -1,12 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
     /*Cores*/
-    --background: #000000;
+    --background: #212121;
     --cor-texto: #ffffff;
-
+    --cor-btn: #01579b;
+    --cor-hover: #0091ea;
     /*Fontes*/
     --fonte-principal: 'Roboto', sans-serif;
     --fonte-secundaria: 'Onest', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    padding: 1.5rem;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 15px 0 30px 0;
+}
+
+.search-box form {
+    display: flex;
+    max-width: 400px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: none;
+}
+
+.search-box .search-btn {
+    padding: 8px;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: 1px solid var(--cor-texto);
+    background-color: var(--cor-btn);
+    color: var(--cor-texto);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.search-box .search-btn:hover {
+    background-color: var(--cor-hover);
+}
+
+a {
+   color: var(--cor-texto);
+   text-decoration: none;
 }
